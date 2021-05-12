@@ -25,25 +25,25 @@ void movement(int tx, int ty, int *x, int *y){
     while(scanf("%c %d", &dir, &i) != EOF){ // ^C para terminar o loop
         if(dir=='N'){
             *y -= i;
-            if(*y>ty) *y = ty;
+            //if(*y>ty) *y = ty;
             system("cls");
             plano(tx, ty, *x, *y);
         }
         if(dir=='S'){
             *y += i;
-            if(*y<0) *y = 0;
+            //if(*y<0) *y = 0;
             system("cls");
             plano(tx, ty, *x, *y);
         }
         if(dir=='O'){
             *x -= i;
-            if(*x<0) *x = 0;
+            //if(*x<0) *x = 0;
             system("cls");
             plano(tx, ty, *x, *y);
         }
         if(dir=='L'){
             *x += i;
-            if(*x>tx) *x = tx;
+            //if(*x>tx) *x = tx;
             system("cls");
             plano(tx, ty, *x, *y);
         }
